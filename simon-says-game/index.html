@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simon Says Game</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Simon Says Game</h1>
+
+        <div id="instructions-page">
+        <h3>How to Play</h3>
+        <p>
+            Welcome to Simon Says! The game is simple:
+            <ol>
+                <li>Watch the sequence of flashing colors.</li>
+                <li>When the sequence is complete, repeat it by clicking the buttons in the same order.</li>
+                <li>Each time you get it right, the sequence will get longer.</li>
+                <li>If you make a mistake, the game is over.</li>
+            </ol>
+        </p>
+        <button id="play-button">Play</button>
+    </div>
+
+    <div id="game-over-screen" class="hidden">
+        <h3 id="game-over-text">Game Over!</h3>
+        <button id="restart-button">Restart Game</button>
+    </div>
+
+        <div id="game-container" class="hidden">
+        <h3 id="game-level">Level 0</h3>
+        <div class="btn-container">
+            <div class="line_one">
+                <div class="btn red" type="button" id="red"></div>
+                <div class="btn yellow" type="button" id="yellow"></div>
+            </div>
+            <div class="line_two">
+                <div class="btn green" type="button" id="green"></div>
+                <div class="btn purple" type="button" id="purple"></div>
+            </div>
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
